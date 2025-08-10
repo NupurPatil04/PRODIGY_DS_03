@@ -1,39 +1,65 @@
-# PRODIGY_DS_03
-# 🧠 PRODGY_DS_03 - Decision Tree Classifier
+Decision Tree Classifier – Bank Marketing Campaign Prediction
+Task 03 – Data Science Internship at Prodigy InfoTech
 
-This repository contains Task 03 of my Data Science Internship at Prodigy InfoTech. The task focuses on building and evaluating a Decision Tree Classifier using Python and Scikit-learn.
+Project Overview
+In this task, I built and evaluated a Decision Tree Classifier to predict whether a customer would subscribe to a term deposit based on their demographic and campaign-related data. This project focuses on data preprocessing, model building, and interpreting feature importance to extract valuable business insights.
 
----
+The model helps answer:
+Which features have the most impact on predicting customer conversions?
 
-## 📁 Dataset
+📂 Dataset
+Source: Bank Marketing Dataset – UCI Machine Learning Repository
 
-- **Name**: Social_Network_Ads.csv  
-- **Description**: Contains data on user age, estimated salary, and purchase decisions.
+Size: 4,521 records
 
----
+Features: Includes customer demographics (age, job, marital status, balance) and marketing campaign data (contact month, duration, previous outcome, etc.)
 
-## 🔧 Tools & Libraries Used
+Target Variable: Whether the client subscribed to a term deposit (yes / no)
 
-- Python
-- NumPy
-- Pandas
-- Matplotlib / Seaborn
-- Scikit-learn (sklearn)
+🛠️ Tools & Libraries
+Python
+Pandas, NumPy – Data Handling
+Matplotlib, Seaborn – Data Visualization
+Scikit-learn – Model Training & Evaluation
 
----
+⚙️ Workflow
+Data Loading & Exploration – Checked dataset shape, columns, and target distribution.
 
-## ⚙️ Workflow
+Data Preprocessing – Handled missing values, encoded categorical features, and scaled numeric variables.
 
-1. **Import the Dataset**
-2. **Data Preprocessing**
-   - Feature selection
-   - Train-test split
-   - Feature scaling
-3. **Model Building**
-   - Decision Tree Classifier
-4. **Model Evaluation**
-   - Confusion Matrix
-   - Accuracy Score
-5. **Visualization**
-   - Decision tree plot using `plot_tree`
+Train-Test Split – 70-30 split for training and testing.
 
+Model Building – Implemented Decision Tree Classifier using sklearn.tree.DecisionTreeClassifier.
+
+Model Evaluation – Calculated accuracy and plotted confusion matrix.
+
+Feature Importance Analysis – Identified top factors influencing predictions.
+
+📊 Key Results
+Model Accuracy: 89%
+Most Important Features:
+duration (call length)
+day (day of contact)
+balance (bank account balance)
+age (customer’s age)
+
+Visualizing feature importance helps businesses prioritize high-impact variables in marketing strategies.
+
+📈 Visuals
+Top 10 Feature Importances
+
+Decision Tree Structure
+
+💡 Key Learnings
+Learned how to preprocess categorical and numerical variables for ML models.
+
+Understood how to interpret decision tree outputs to explain predictions.
+
+Gained experience in visualizing and explaining feature importance for business impact.
+
+🔗 Repository Contents
+decision_tree_classifier.py – Model implementation code.
+
+feature_importance.png – Feature importance visualization.
+
+decision_tree_plot.png – Visualization of the trained decision tree.
