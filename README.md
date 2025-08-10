@@ -1,65 +1,41 @@
-Decision Tree Classifier – Bank Marketing Campaign Prediction
-Task 03 – Data Science Internship at Prodigy InfoTech
+# PRODIGY_DS_03 - Decision Tree Classifier
 
-Project Overview
-In this task, I built and evaluated a Decision Tree Classifier to predict whether a customer would subscribe to a term deposit based on their demographic and campaign-related data. This project focuses on data preprocessing, model building, and interpreting feature importance to extract valuable business insights.
+This repository contains **Task 03** of my Data Science Internship at **Prodigy InfoTech**.  
+The task focuses on building and evaluating a **Decision Tree Classifier** using Python and Scikit-learn.
 
-The model helps answer:
-Which features have the most impact on predicting customer conversions?
+## 📁 Dataset
+- **Name:** Social_Network_Ads.csv  
+- **Description:** Contains demographic and behavioral data such as age, balance, job type, and duration, used to predict outcomes.
 
-📂 Dataset
-Source: Bank Marketing Dataset – UCI Machine Learning Repository
+## 🔧 Tools & Libraries
+- Python  
+- NumPy  
+- Pandas  
+- Matplotlib / Seaborn  
+- Scikit-learn (sklearn)
 
-Size: 4,521 records
+## ⚙️ Workflow
+1. **Data Loading & Preprocessing**  
+   - Handling categorical and numerical features  
+   - Feature scaling  
+   - Train-test split  
 
-Features: Includes customer demographics (age, job, marital status, balance) and marketing campaign data (contact month, duration, previous outcome, etc.)
+2. **Model Building**  
+   - Trained a Decision Tree Classifier  
+   - Tuned hyperparameters for optimal performance  
 
-Target Variable: Whether the client subscribed to a term deposit (yes / no)
+3. **Model Evaluation**  
+   - Confusion Matrix  
+   - Accuracy Score  
 
-🛠️ Tools & Libraries
-Python
-Pandas, NumPy – Data Handling
-Matplotlib, Seaborn – Data Visualization
-Scikit-learn – Model Training & Evaluation
+4. **Visualization**  
+   - **Top 10 Feature Importances** plotted as a horizontal bar chart for interpretability
 
-⚙️ Workflow
-Data Loading & Exploration – Checked dataset shape, columns, and target distribution.
+## 📊 Results
+- Accuracy Score: *[Insert your accuracy here]*  
+- Most important feature: `duration`
 
-Data Preprocessing – Handled missing values, encoded categorical features, and scaled numeric variables.
-
-Train-Test Split – 70-30 split for training and testing.
-
-Model Building – Implemented Decision Tree Classifier using sklearn.tree.DecisionTreeClassifier.
-
-Model Evaluation – Calculated accuracy and plotted confusion matrix.
-
-Feature Importance Analysis – Identified top factors influencing predictions.
-
-📊 Key Results
-Model Accuracy: 89%
-Most Important Features:
-duration (call length)
-day (day of contact)
-balance (bank account balance)
-age (customer’s age)
-
-Visualizing feature importance helps businesses prioritize high-impact variables in marketing strategies.
-
-📈 Visuals
-Top 10 Feature Importances
-
-Decision Tree Structure
-
-💡 Key Learnings
-Learned how to preprocess categorical and numerical variables for ML models.
-
-Understood how to interpret decision tree outputs to explain predictions.
-
-Gained experience in visualizing and explaining feature importance for business impact.
-
-🔗 Repository Contents
-decision_tree_classifier.py – Model implementation code.
-
-feature_importance.png – Feature importance visualization.
-
-decision_tree_plot.png – Visualization of the trained decision tree.
+## 📌 Key Learnings
+- Learned how Decision Trees work internally for classification problems  
+- Understood the importance of feature importance analysis in model interpretability  
+- Practiced end-to-end ML workflow in Python
