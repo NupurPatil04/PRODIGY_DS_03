@@ -32,7 +32,7 @@ The task focuses on building and evaluating a **Decision Tree Classifier** using
    - **Top 10 Feature Importances** plotted as a horizontal bar chart for interpretability
 
 ## 📊 Results
-- Accuracy Score: *[Insert your accuracy here]*  
+- Accuracy Score: *0.87*  
 - Most important feature: `duration`
 
 ## 📌 Key Learnings
